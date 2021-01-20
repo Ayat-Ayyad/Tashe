@@ -17,7 +17,6 @@ public class Landmark {
     private String description;
     @NotEmpty(message = "REQUIRED!")
     private String city;
-    private String activity;
     private String category;
     @Column(updatable = false)
     private Date createdAt;
@@ -61,14 +60,6 @@ public class Landmark {
 
     public void setCity(String city) {
         this.city = city;
-    }
-
-    public String getActivity() {
-        return activity;
-    }
-
-    public void setActivity(String activity) {
-        this.activity = activity;
     }
 
     public String getCategory() {

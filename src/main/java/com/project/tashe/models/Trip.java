@@ -31,7 +31,6 @@ public class Trip {
             joinColumns = @JoinColumn(name = "trip_id"),
             inverseJoinColumns = @JoinColumn(name = "landmark_id"))
     private List<Landmark> landmarks;
-
     public Trip() {
     }
 
