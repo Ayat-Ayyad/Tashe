@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import java.security.Principal;
 
 @Controller
-public class UserController {
+public class  UserController {
     private final UserService userService;
     private final UserValidator userValidator;
 
@@ -63,4 +63,5 @@ public class UserController {
         model.addAttribute("currentUser", userService.findByUsername(username));
         return "homePage.jsp";
     }
+
 }
