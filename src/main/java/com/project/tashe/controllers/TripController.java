@@ -7,13 +7,14 @@ import com.project.tashe.services.TripService;
 import com.project.tashe.services.UserService;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.util.List;
 
-@RestController
+@Controller
 public class TripController {
     private final TripService tripService;
     private final UserService userService;
