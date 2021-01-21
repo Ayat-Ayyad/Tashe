@@ -54,7 +54,7 @@ public class  UserController {
     public String adminPage(Principal principal, Model model) {
         String username = principal.getName();
         model.addAttribute("currentUser", userService.findByUsername(username));
-        return "adminPage.jsp";
+        return "admin.jsp";
     }
 
     @RequestMapping(value = {"/", "/home"})

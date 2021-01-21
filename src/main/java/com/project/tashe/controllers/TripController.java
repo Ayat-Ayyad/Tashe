@@ -49,20 +49,20 @@ public class TripController {
 
     @RequestMapping("/trips/new")
     public String newtripForm(@ModelAttribute("trip") Trip trip) {
-        return "newtripForm.jsp";
+        return "admin.jsp";
     }
 //    @RequestMapping(value = "/trips", method = RequestMethod.POST)
 //    public String addTrip(@ModelAttribute("trip") Trip trip){
 //    }
     @RequestMapping("/landmarks/new")
     public String newLandmarkForm(@ModelAttribute("landmark") Landmark landmark) {
-        return "newLandmarkForm.jsp";
+        return "admin.jsp";
     }
 
     @RequestMapping(value = "/landmarks", method = RequestMethod.POST)
     public String addLandmark(@ModelAttribute("landmark") Landmark landmark){
         tripService.createLandmark(landmark);
-        return "redirect:/admin";
+        return "redirect:/landmarks/new";
     }
 
 }
