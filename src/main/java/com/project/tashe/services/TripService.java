@@ -1,5 +1,6 @@
 package com.project.tashe.services;
 
+import com.project.tashe.models.Landmark;
 import com.project.tashe.models.Trip;
 import com.project.tashe.models.TripLandmark;
 import com.project.tashe.repositories.LandmarkRepository;
@@ -22,20 +23,31 @@ public class TripService {
         this.tripLandmarkRepository = tripLandmarkRepository;
     }
 
-    public List<Trip> getAllTrips(){
+    public List<Trip> getAllTrips() {
         return tripRepository.findAll();
     }
-    public List<Trip> getAllTripsOrderByPrice(){
+
+    public List<Trip> getAllTripsOrderByPrice() {
         return tripRepository.findAllByOrderByPriceAsc();
     }
-    public List<Trip> getAllTripsOrderByDate(){
+
+    public List<Trip> getAllTripsOrderByDate() {
         return tripRepository.findAllByOrderByDateAsc();
     }
-    public List<TripLandmark> getAllTripLandmarkByAcivity(String activity){
+
+    public Trip getTripById(Long id) {
+        return tripRepository.findById(id).orElse(null);
+    }
+
+    public List<TripLandmark> getAllTripLandmarkByActivity(String activity) {
         return tripLandmarkRepository.findAllByActivity(activity);
     }
-    public TripLandmark getTripLandmarkByTripId(Long id){
+
+    public TripLandmark getTripLandmarkByTripId(Long id) {
         return tripLandmarkRepository.findByTripIdOrderByRouteAsc(id);
+    }
+    public Landmark createLandmark(Landmark landmark){
+        return landmarkRepository.save(landmark);
     }
 }
 

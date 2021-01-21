@@ -23,7 +23,11 @@ public class Trip {
     @Column(updatable = false)
     private Date createdAt;
     private Date updatedAt;
-    @ManyToMany(mappedBy = "trips")
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "trips_users",
+            joinColumns = @JoinColumn(name = "trip_id"),
+            inverseJoinColumns = @JoinColumn(name = "users_id"))
     private List<User> users;
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
