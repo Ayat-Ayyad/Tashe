@@ -106,7 +106,7 @@ section .section-title{
 }
 nav{
     background-color: #4D4D4D;
-
+    opacity: 0.8;
 }
 
 #topnav{
@@ -140,7 +140,8 @@ section .section-title {
 }
 #footer {
     background: black !important;
-    opacity: 0.7;
+    opacity: 0.8;
+
 }
 #footer h5{
     padding-left: 10px;
@@ -194,6 +195,9 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
+.logout{
+    border-radius: 5px;
+}
 
 @media (max-width:767px){
     #footer h5 {
@@ -203,3 +207,4 @@ section .section-title {
         margin-bottom: 10px;
     }
 }
+
