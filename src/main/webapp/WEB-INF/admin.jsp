@@ -16,7 +16,7 @@
 <body>
 <h1>Landmark form</h1>
     <div class="card-body">
-            <form:form method="POST" action="/trips/new" modelAttribute="landmark">
+            <form:form method="POST" action="/landmarks" modelAttribute="landmark">
         <div class="input-group form-group">
             <div class="input-group-prepend">
             </div>
