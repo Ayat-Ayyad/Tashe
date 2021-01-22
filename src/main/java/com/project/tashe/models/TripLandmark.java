@@ -1,5 +1,7 @@
 package com.project.tashe.models;
 
+import org.hibernate.validator.constraints.Range;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 
@@ -9,7 +11,7 @@ public class TripLandmark {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotEmpty(message = "REQUIRED!")
+    @Range(min = 0)
     private Integer route;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "trip_id")
@@ -19,6 +21,12 @@ public class TripLandmark {
     private Landmark landmark;
 
     public TripLandmark() {
+    }
+
+    public TripLandmark(Integer route, Trip trip, Landmark landmark) {
+        this.route = route;
+        this.trip = trip;
+        this.landmark = landmark;
     }
 
     public Long getId() {

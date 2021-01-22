@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -83,6 +84,20 @@ public class TripController {
             return "adminControlPanel.jsp";
         }
         tripService.createTrip(trip);
+        Trip newTrip = tripService.getTripById(trip.getId());
+        ArrayList<Landmark> newLandmarks = new ArrayList<Landmark>(newTrip.getLandmarks());
+        int i = 1;
+        for (Landmark landmark: newLandmarks) {
+            TripLandmark newTripLandmark = tripService.getTripLandmarkByLandmark(landmark);
+            if (landmark.getCity().equals(newTrip.getLandmarks().get(0).getCity())) {
+                newTripLandmark.setRoute(0);
+                tripService.createTripLandmark(newTripLandmark);
+            }else {
+                newTripLandmark.setRoute(i);
+                tripService.createTripLandmark(newTripLandmark);
+                i++;
+            }
+        }
         return "redirect:/admin/controls";
     }
 

@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface LandmarkRepository extends CrudRepository<Landmark, Long> {
     List<Landmark> findAll();
+    List<Landmark> findAllByCity(String city);
 }

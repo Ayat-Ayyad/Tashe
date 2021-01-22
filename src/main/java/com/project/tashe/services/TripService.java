@@ -47,8 +47,18 @@ public class TripService {
     public TripLandmark getTripLandmarkByTripId(Long id) {
         return tripLandmarkRepository.findByTripIdOrderByRouteAsc(id);
     }
+    public TripLandmark getTripLandmarkByLandmark(Landmark landmark) {
+        return tripLandmarkRepository.findByLandmark(landmark);
+    }
+
+    public TripLandmark createTripLandmark(TripLandmark tripLandmark){
+        return tripLandmarkRepository.save(tripLandmark);
+    }
     public List<Landmark> getAllLandmarks(){
         return landmarkRepository.findAll();
+    }
+    public List<Landmark> getAllLandmarksByCity(String city){
+        return landmarkRepository.findAllByCity(city);
     }
     public Landmark createLandmark(Landmark landmark){
         return landmarkRepository.save(landmark);
