@@ -17,18 +17,22 @@ public class Landmark {
     private String description;
     @NotEmpty(message = "REQUIRED!")
     private String city;
+    @NotEmpty(message = "REQUIRED!")
     private String category;
+    @NotEmpty(message = "REQUIRED!")
+    private String activity;
     @Column(updatable = false)
     private Date createdAt;
     private Date updatedAt;
-    @ManyToMany(mappedBy = "landmarks")
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "trips_landmarks",
+            joinColumns = @JoinColumn(name = "landmark_id"),
+            inverseJoinColumns = @JoinColumn(name = "trip_id"))
     private List<Trip> trips;
-    @OneToOne(mappedBy="landmark", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
-    private Coordinate coordinate;
+
     public Landmark() {
     }
-
-
 
     public Long getId() {
         return id;
@@ -70,6 +74,14 @@ public class Landmark {
         this.category = category;
     }
 
+    public String getActivity() {
+        return activity;
+    }
+
+    public void setActivity(String activity) {
+        this.activity = activity;
+    }
+
     public Date getCreatedAt() {
         return createdAt;
     }
@@ -92,14 +104,6 @@ public class Landmark {
 
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
-    }
-
-    public Coordinate getCoordinate() {
-        return coordinate;
-    }
-
-    public void setCoordinate(Coordinate coordinate) {
-        this.coordinate = coordinate;
     }
 
     @PrePersist

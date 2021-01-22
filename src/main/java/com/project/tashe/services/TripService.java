@@ -39,12 +39,16 @@ public class TripService {
         return tripRepository.findById(id).orElse(null);
     }
 
-    public List<TripLandmark> getAllTripLandmarkByActivity(String activity) {
-        return tripLandmarkRepository.findAllByActivity(activity);
+    public Trip createTrip(Trip trip){
+        return tripRepository.save(trip);
     }
+
 
     public TripLandmark getTripLandmarkByTripId(Long id) {
         return tripLandmarkRepository.findByTripIdOrderByRouteAsc(id);
+    }
+    public List<Landmark> getAllLandmarks(){
+        return landmarkRepository.findAll();
     }
     public Landmark createLandmark(Landmark landmark){
         return landmarkRepository.save(landmark);

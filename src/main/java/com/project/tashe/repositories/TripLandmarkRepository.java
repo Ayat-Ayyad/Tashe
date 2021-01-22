@@ -9,7 +9,6 @@ import java.util.List;
 @Repository
 public interface TripLandmarkRepository extends CrudRepository<TripLandmark, Long> {
 
-    List<TripLandmark> findAllByActivity(String activity);
     TripLandmark findByTripIdOrderByRouteAsc(Long id);
 
 }

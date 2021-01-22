@@ -11,8 +11,6 @@ public class TripLandmark {
     private Long id;
     @NotEmpty(message = "REQUIRED!")
     private Integer route;
-    @NotEmpty(message = "REQUIRED!")
-    private String activity;
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "trip_id")
     private Trip trip;
@@ -37,14 +35,6 @@ public class TripLandmark {
 
     public void setRoute(Integer route) {
         this.route = route;
-    }
-
-    public String getActivity() {
-        return activity;
-    }
-
-    public void setActivity(String activity) {
-        this.activity = activity;
     }
 
     public Trip getTrip() {

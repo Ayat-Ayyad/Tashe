@@ -1,5 +1,8 @@
 package com.project.tashe.models;
 
+import org.hibernate.validator.constraints.Range;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
@@ -15,17 +18,16 @@ public class Trip {
     private Long id;
     @NotEmpty(message = "REQUIRED!")
     private String tripName;
-    @NotEmpty(message = "REQUIRED!")
+    @DateTimeFormat(pattern ="yyyy-MM-dd")
     private Date date;
-    @Min(0)
-    @NotEmpty(message = "REQUIRED!")
+    @Range(min = 0)
     private Integer price;
     @Column(updatable = false)
     private Date createdAt;
     private Date updatedAt;
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
-            name = "trips_users",
+            name = "users_trips",
             joinColumns = @JoinColumn(name = "trip_id"),
             inverseJoinColumns = @JoinColumn(name = "users_id"))
     private List<User> users;
