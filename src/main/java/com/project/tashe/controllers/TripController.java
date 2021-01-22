@@ -27,7 +27,7 @@ public class TripController {
     public List<Trip> tripsPage(Model model) {
         return tripService.getAllTrips();
 //        model.addAttribute("trips", tripService.getAllTrips());
-//        return "tripsPage.jsp";
+//        return "AllTrips.jsp";
     }
 
     @RequestMapping("/trips/{id}")
@@ -38,12 +38,12 @@ public class TripController {
     }
 
     @RequestMapping("/trips/joined")
-    public List<Trip> usertripsPage(Principal principal, Model model) {
-        String username = principal.getName();
-        User user = userService.findByUsername(username);
-        return user.getTrips();
+    public String usertripsPage(Principal principal, Model model) {
+        //String username = principal.getName();
+        //User user = userService.findByUsername(username);
+       // return user.getTrips();
 //        model.addAttribute("usertrips", user.getTrips());
-//        return "usertripsPage.jsp";
+        return "UserProfile.jsp";
     }
 
     //    =========================================================================
