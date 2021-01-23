@@ -44,7 +44,7 @@ We believe this website will be a profitable business as well as an effective wa
 
 
 **User's joined trips**
-![](User's joined trips.gif)
+![](usersjoinedtrips.gif)
 
 
 :biking_man: :swimmer: 	:biking_woman: 	:horse_racing: :climbing: :camping: :herb: :sunrise_over_mountains:
