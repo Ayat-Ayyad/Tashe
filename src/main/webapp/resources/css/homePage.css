@@ -41,9 +41,12 @@ h1 {
     width: 75vw;
     z-index: 999;
 }
+.foo{
+    color:#343a40 !important;
+}
 
 .join-now h1 {
-    color: #a1a1a1;
+    color: white;
 }
 
 .join-now button {
@@ -53,10 +56,10 @@ h1 {
 
 .h-rule {
     float: right;
-    background-color: #700;
-    width: 75vw;
-    height: 7px;
-    animation: rule 3s alternate-reverse infinite;
+    background-color: black;
+    width: 90vw;
+    height: 5px;
+    animation: rule 7s alternate-reverse infinite;
     transform-origin: 100% 50%;
 }
 

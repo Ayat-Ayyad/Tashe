@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
     <style>
@@ -94,7 +96,8 @@
 </header>
 <main>
     <div class="mr-5 pr-5">
-        <h1 class="text-right">Discover Landmarks!</h1>
+        <h1 style="text-align: center !important;">Discover Landmarks!</h1>
+
         <div class="h-rule mb-5"></div>
     </div>
     <div class="container">
@@ -188,18 +191,19 @@
         </section>
     </div>
 </main>
+<hr>
 <footer>
     <div class="row text-center text-lg-left">
         <div class="col-lg-5 px-4 pb-4">
             <h4 class="mb-3">TASHEH:</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. </p>
+            <p class="foo">
+                Tasheh allows users to browse through many interesting day-trips around Palestine. Families and friends can join to have fun visit lots of different places and do many types of activities.
+
+                This platform is much needed especially during the time of Covid-19. Tasheh facilitates joining fun activities to stop people from feeling trapped during lock-downs while also staying safe and being back home before the night lock down.
+
+                I believe this website will be a profitable business as well as a way to providing support to our local market and internal tourism. </p>
         </div>
-        <div class="col-lg-5 px-4 pb-4">
+        <div  class="col-lg-5 px-4 pb-4">
             <h4 class="mb-3">Contact:</h4>
             <p>Mobile:00972-345-xxx-xxx</p>
             <p>Email: tashe@ex.com</p>
@@ -208,12 +212,15 @@
         <div class="col-lg-2 px-4 pb-4">
             <h4 class="mb-3">Follow Us:</h4>
             <div class="social-media">
-                <a href="#" class="mr-2"><img src="{% static 'img/icons/facebook.svg' %}" alt="FB Icon"/></a>
-                <a href="#"><img src="{% static 'img/icons/instagram.svg' %}" alt="Instagram Icon"/></a>
+                <img src="https://i.ibb.co/MgxWJ6d/facebook.png" width="100px" height="100px"></img>
+                <img src="https://i.ibb.co/d5F8HVM/insta.png" width="100px" height="100px"></img>
+                <img src="https://i.ibb.co/Wgr0FmG/twitter.png" width="150px" height="100px" ></img>
+
             </div>
         </div>
     </div>
     <hr/>
+
     <div class="copyright text-center pb-3">Copyright&copy;2020 - All Rights Reserved</div>
 </footer>
 <!-- ./Footer -->
