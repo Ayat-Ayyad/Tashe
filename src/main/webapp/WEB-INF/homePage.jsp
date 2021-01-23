@@ -42,7 +42,7 @@
                             </c:when>
                             <c:otherwise>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/admin/controls">Control Panel</a>
+                                    <a class="nav-link" href="/admin/controls">CONTROL PANEL</a>
                                 </li>
                             </c:otherwise>
                         </c:choose>
@@ -192,7 +192,7 @@
     </div>
 </main>
 <hr>
-<footer>
+<footer class="footer">
     <div class="row text-center text-lg-left">
         <div class="col-lg-5 px-4 pb-4">
             <h4 class="mb-3">TASHEH:</h4>
@@ -212,16 +212,15 @@
         <div class="col-lg-2 px-4 pb-4">
             <h4 class="mb-3">Follow Us:</h4>
             <div class="social-media">
-                <img src="https://i.ibb.co/MgxWJ6d/facebook.png" width="100px" height="100px"></img>
-                <img src="https://i.ibb.co/d5F8HVM/insta.png" width="100px" height="100px"></img>
-                <img src="https://i.ibb.co/Wgr0FmG/twitter.png" width="150px" height="100px" ></img>
-
+                <a href="https://ibb.co/CJ2xtmG"><img src="https://i.ibb.co/tZXyhQr/1.png" alt="1" border="0" width="50px"></a>
+                <a href="https://ibb.co/qxB8kHt"><img src="https://i.ibb.co/Yb2Sp5z/2.png" alt="2" border="0" width="75px"></a>
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/YtJHyMG/haha.png" alt="haha" border="0" width="50px"></a>
             </div>
         </div>
     </div>
     <hr/>
 
-    <div class="copyright text-center pb-3">Copyright&copy;2020 - All Rights Reserved</div>
+    <div class="copyright text-center pb-3">Copyright&copy;2021 - All Rights Reserved</div>
 </footer>
 <!-- ./Footer -->
 <%--<section id="footer">--%>
