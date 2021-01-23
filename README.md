@@ -1,5 +1,5 @@
 # Tasheh طشة
-#### Welcome to our Java Spring project 🌞 
+#### Welcome to our Java Spring project 
 
 
 **Tasheh** allows users to browse through many interesting day-trips around Palestine. Families and friends can join to have fun visit lots of different places and do many types of activities.
@@ -46,5 +46,13 @@ We believe this website will be a profitable business as well as an effective wa
 **User's joined trips**
 ![](usersjoinedtrips.gif)
 
+**Admin view: Add trip/Landmark**
+![](admin_view.gif)
 
-:biking_man: :swimmer: 	:biking_woman: 	:horse_racing: :climbing: :camping: :herb: :sunrise_over_mountains:
+**Our webapp is fully responsive**
+
+
+ ![](responsive.gif)
+
+
+	:biking_woman: 	
