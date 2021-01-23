@@ -36,14 +36,12 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <a class="nav-link" href="#">HOMEPAGE</a>
+                <a class="nav-link" href="/">HOMEPAGE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">DISCOVER TRIPS!</a>
+                <a class="nav-link" href="/trips">DISCOVER TRIPS!</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PROFILE</a>
-            </li>
+          
             <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT US</a>
             </li>
