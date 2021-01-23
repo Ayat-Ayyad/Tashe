@@ -37,17 +37,15 @@ We believe this website will be a profitable business as well as an effective wa
 
 **Home Page- Photo Slider**
  ![](slider.gif)
- 
- 
- **Our webapp is fully responsive**
- ![](responsive.gif)
 
 
 **User's joined trips**
 ![](usersjoinedtrips.gif)
 
+
 **Admin view: Add trip/Landmark**
 ![](admin_view.gif)
+
 
 **Our webapp is fully responsive**
 
