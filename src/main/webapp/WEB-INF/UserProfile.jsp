@@ -41,7 +41,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="/trips">DISCOVER TRIPS!</a>
             </li>
-          
+
             <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT US</a>
             </li>
