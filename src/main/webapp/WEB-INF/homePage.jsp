@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -28,15 +29,30 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/trips">DISCOVER TRIPS!</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/trips/joined">PROFILE</a>
-                </li>
-                <li class="nav-item">
-                    <form action="/logout" method="post">
-                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                        <input type="submit" class="logout nav-link bg-transparent" value="LOGOUT"/>
-                    </form>
-                </li>
+                <c:choose>
+                    <c:when test="${ currentUser.roles.get(0) != null }">
+                        <c:choose>
+                            <c:when test="${ currentUser.roles.get(0).name.equals('ROLE_USER') }">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/trips/joined">PROFILE</a>
+                            </li>
+                            </c:when>
+                        <c:otherwise>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/controls">Control Panel</a>
+                        </li>
+                        </c:otherwise>
+                        </c:choose>
+                        <li class="nav-item">
+                            <form action="/logout" method="post">
+                                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                                <input type="submit" class="logout nav-link bg-transparent" value="LOGOUT"/>
+                            </form>
+                        </li>
+                    </c:when>
+                    <c:otherwise>
+                    </c:otherwise>
+                </c:choose>
             </ul>
         </div>
     </nav>
@@ -44,8 +60,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100"
-                     src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg"
-                     alt="First slide">
+                     src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/7/b/2/838826-large-israel-wallpapers-1920x1200-high-resolution.jpg" alt="Second slide">
@@ -55,6 +70,7 @@
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg " alt="Fourth slide">
+
             </div>
         </div>
         <a class="carousel-control-prev" href="#tashehCarousel" role="button" data-slide="prev">

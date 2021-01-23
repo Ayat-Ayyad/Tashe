@@ -21,6 +21,8 @@ public class Landmark {
     private String category;
     @NotEmpty(message = "REQUIRED!")
     private String activity;
+    @NotEmpty(message = "REQUIRED!")
+    private String imgUrl;
     @Column(updatable = false)
     private Date createdAt;
     private Date updatedAt;
@@ -104,6 +106,14 @@ public class Landmark {
 
     public void setTrips(List<Trip> trips) {
         this.trips = trips;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     @PrePersist
