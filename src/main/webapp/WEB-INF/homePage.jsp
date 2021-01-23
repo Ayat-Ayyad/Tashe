@@ -14,6 +14,7 @@
     <style>
         <%@include file="../resources/css/profile.css" %>
     </style>
+
     <title>Welcome to Tasheh</title>
 </head>
 <body>

@@ -17,6 +17,7 @@
     <style>
         <%@include file="../resources/css/style.css" %>
     </style>
+
     <title>${ trip.tripName }</title>
 </head>
 <body>

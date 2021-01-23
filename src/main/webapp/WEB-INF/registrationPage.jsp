@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <title>Registration Page</title>
@@ -45,7 +45,6 @@
         </ul>
     </div>
 </nav>
-<p><form:errors path="user.*"/></p>
 
 <div class="container">
     <div class="d-flex justify-content-center h-100">
@@ -66,6 +65,7 @@
                         </div>
 
                         <form:input type="text" path="username" class="form-control" placeholder="username"/>
+                        <p class="text-danger"><form:errors path="username"/></p>
 
                     </div>
                     <div class="input-group form-group">
@@ -73,12 +73,14 @@
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
                         <form:input type="password" path="password" class="form-control" placeholder="password"/>
+                        <p class="text-danger"><form:errors path="password"/></p>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
                         <form:input type="password" path="passwordConfirmation" class="form-control" placeholder="password"/>
+                        <p class="text-danger"><form:errors path="passwordConfirmation"/></p>
                     </div>
                     <div class="row align-items-center remember">
                         <input type="checkbox">Remember Me
