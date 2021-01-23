@@ -47,14 +47,14 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100"
-                     src="https://i.ibb.co/5nvC75x/deadsea.jpg"
+                     src="https://i.ibb.co/NWmwP6K/Israel-Houses-Sky-images-2560x1600.jpg"
                      alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/rsVxtTy/Jordan-River.jpg" alt="Second slide">
+                <img class="d-block w-100" src="https://i.ibb.co/NFVxtxR/HD-Free-Jerusalem-Photos.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/gzmNMTV/damascusgate.jpg" alt="Third slide">
+                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg " alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#tashehCarousel" role="button" data-slide="prev">

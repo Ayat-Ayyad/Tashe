@@ -36,13 +36,10 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <a class="nav-link" href="#">HOMEPAGE</a>
+                <a class="nav-link" href="/">HOMEPAGE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">DISCOVER TRIPS!</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PROFILE</a>
+                <a class="nav-link" href="/trips/joined">PROFILE</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT US</a>
@@ -62,7 +59,7 @@
     <div class="container">
         <div class="row">
             <c:forEach var="trip" items="${ trips }">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card-content">
                         <div class="card-img">
                             <img src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="">
@@ -71,13 +68,13 @@
                             <h3>${ trip.tripName }</h3>
                             <p>${ trip.date }</p>
                             <p>${ trip.price }</p>
-                            <a href="/trips/${ trip.id }" class="btn-card">More Details</a>
+                            <a href="/trips/${ trip.id }" class="btn btn-warning">More Details</a>
                             <c:choose>
                                 <c:when test="${ trip.users.contains(user) }">
-                                    <span>Joined</span>
+                                    <span class="badge badge-warning">Joined!</span>
                                 </c:when>
                                 <c:otherwise>
-                                    <a href="/trips/${ trip.id }/join" class="btn-card">Join</a>
+                                    <a href="/trips/${ trip.id }/join" class="btn btn-warning">Join</a>
                                 </c:otherwise>
                             </c:choose>
                         </div>
