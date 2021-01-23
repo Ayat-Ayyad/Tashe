@@ -51,24 +51,23 @@
 </nav>
 <main role="main">
     <div id='map'></div>
-    <div class="formBlock">
-        <h4>${ trip.tripName }</h4>
-        <p>${ trip.date }</p>
-        <p>${ trip.price }NIS</p>
-        <p>Number of people joined: ${ trip.users.size() }</p>
+    <div class="formBlock py-5 px-4">
+        <h2 class="text-warning">${ trip.tripName }</h2>
+        <h6>${ trip.date }</h6>
+        <h6>${ trip.price } NIS</h6>
+        <h6 class="mb-4">Number of people joined: ${ trip.users.size() }</h6>
         <div class="ml-5">
             <c:forEach var="landmark" items="${ trip.landmarks }">
-           <h5>${ landmark.landmarkName }</h5>
-                <p>${ landmark.city }</p>
+                <h5 class="text-success">${ landmark.landmarkName }</h5>
+                <h6>${ landmark.city }</h6>
                 <p>${ landmark.description }</p>
                 <p>${ landmark.category }</p>
-                <p>${ landmark.activity }</p>
-
+                <p class="mb-5">${ landmark.activity }</p>
             </c:forEach>
         </div>
-        <form id="form">
+        <form id="form" class="text-center">
             <input type="hidden" name="landmarks" class="input" id="landmarks" value="${ landmarks }"/>
-            <button style="" type="submit">Get Route</button>
+            <button type="submit" class="btn btn-outline-warning py-2 px-4">Get Route</button>
         </form>
     </div>
 </main>
@@ -98,7 +97,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=74uP9PYEEAdpGNKssHcfAONHzfyCaLUy"></script>
 <script
-        src="h ttps://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=74uP9PYEEAdpGNKssHcfAONHzfyCaLUy"></script>
+        src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=74uP9PYEEAdpGNKssHcfAONHzfyCaLUy"></script>
 <script>
     <%@include file="../resources/js/tripInfoPage.js" %>
 </script>

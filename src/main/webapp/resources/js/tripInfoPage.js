@@ -2,7 +2,7 @@
 let map = L.map('map', {
     layers: MQ.mapLayer(),
     center: [31.905455218200064, 35.20356449458499],
-    zoom: 12
+    zoom: 11
 });
 
 
@@ -26,6 +26,7 @@ function runDirection(sCity,sName,sActivity,eCity,eName,eActivity) {
 
 
     CustomRouteLayer = MQ.Routing.RouteLayer.extend({
+
         createStartMarker: (location) => {
             var custom_icon;
             var marker;
@@ -37,7 +38,7 @@ function runDirection(sCity,sName,sActivity,eCity,eName,eActivity) {
                 popupAnchor: [0, -29]
             });
 
-            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h2>'+ sName +'</h2><p>'+sCity+'</p><p>'+sActivity+'</p><img width="100%" src="img/bethlehem.jpg"></div>');
+            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h3 class="text-danger mb-2">'+ sName +'</h3><h5 class="text-muted mb-4">'+sCity+'</h5><h5>'+sActivity+'</h5></div>');
 
             return marker;
         },
@@ -53,7 +54,7 @@ function runDirection(sCity,sName,sActivity,eCity,eName,eActivity) {
                 popupAnchor: [0, -29]
             });
 
-            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h2>'+ eName +'</h2><p>'+eCity+'</p><p>'+eActivity+'</p><img width="100%" src="img/bethlehem.jpg"></div>');
+            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h3 class="text-danger mb-2">'+ eName +'</h3><h5 class="text-muted mb-4">'+eCity+'</h5><h5>'+eActivity+'</h5></div>');
 
             return marker;
         }
@@ -84,7 +85,7 @@ function submitForm(event) {
     console.log(landmarks);
 
 
-    for (var i = 0; i < landmarks.length /3 - 1; i+=3) {
+    for (var i = 0; i < landmarks.length; i+=3) {
         // run directions function
         runDirection(
             landmarks[i],landmarks[i+1],landmarks[i+2],
