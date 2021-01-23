@@ -17,7 +17,6 @@
     <style>
         <%@include file="../resources/css/style.css" %>
     </style>
-
     <title>${ trip.tripName }</title>
 </head>
 <body>
@@ -72,23 +71,37 @@
         </form>
     </div>
 </main>
-<!-- Footer -->
-<section id="footer">
-    <div class="container">
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5>Quick links</h5>
-                <ul class="list-unstyled quick-links">
-                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href="#"><i class="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href="#"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                </ul>
+<%--<!-- Footer -->--%>
+<%--<footer class="footer">
+    <div class="row text-center text-lg-left">
+        <div class="col-lg-5 px-4 pb-4">
+            <h4 class="mb-3">TASHEH</h4>
+            <p class="foo">
+                Tasheh allows users to browse through many interesting day-trips around Palestine. Families and friends can join to have fun visit lots of different places and do many types of activities.
+
+                This platform is much needed especially during the time of Covid-19. Tasheh facilitates joining fun activities to stop people from feeling trapped during lock-downs while also staying safe and being back home before the night lock down.
+
+                I believe this website will be a profitable business as well as a way to providing support to our local market and internal tourism. </p>
+        </div>
+        <div  class="col-lg-5 px-4 pb-4">
+            <h4 class="mb-3">Contact</h4>
+            <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/6nWwZm0/phone-solid.png" alt="phone-solid" border="0" width="30px"></a> 00972-345-xxx-xxx</p>
+            <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/xYVv5Hk/envelope-solid.png" alt="envelope-solid" border="0" width="30px"></a> tashe@ex.com</p>
+            <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/zS5b1Xt/facebook.png" alt="facebook" border="0" width="30px"></a> tashe/facebook.com</p>
+        </div>
+        <div class="col-lg-2 px-4 pb-4">
+            <h4 class="mb-3">Follow Us</h4>
+            <div class="social-media">
+                <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/kq3BtsV/twitter-square-brands.png" alt="twitter-square-brands" border="0" width="30px"></a>  tashe/twitter.com</p>
+                <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/cFkzBRH/instagram.png" alt="instagram" border="0" width="30px"></a>  tashe/instagram.com</p>
+                <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/T2wcS0z/snapchat-square-brands.png" alt="snapchat-square-brands" border="0" width="30px"></a>   tashe/snapchat.com</p>
             </div>
         </div>
     </div>
-</section>
+    <hr/>
+
+    <div class="copyright text-center pb-3">Copyright&copy;2021 - All Rights Reserved</div>
+</footer>--%>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"

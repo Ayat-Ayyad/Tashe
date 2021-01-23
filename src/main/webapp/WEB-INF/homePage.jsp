@@ -135,12 +135,12 @@
                     <div class="col-lg-4">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg" alt="">
-                                <span><h4>Fountain</h4></span>
+                                <img src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="">
+                                <span><h4>Marsaba</h4></span>
                             </div>
                             <div class="card-desc">
-                                <h3>Ramallah</h3>
-                                <p>Ramallah is a Palestinian city in the central West Bank located 10 km north of Jerusalem at an average elevation of 880 meters above sea level, adjacent to al-Bireh</p>
+                                <h3>Bethlehem</h3>
+                                <p>Bethlehem is a Palestinian town south of Jerusalem in the West Bank. The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination</p>
                                 <a href="/trips" class="btn-card">Discover Trips</a>
                             </div>
                         </div>
@@ -151,12 +151,12 @@
                     <div class="col-lg-4">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="">
-                                <span><h4>Marsaba</h4></span>
+                                <img src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg" alt="">
+                                <span><h4>Fountain</h4></span>
                             </div>
                             <div class="card-desc">
-                                <h3>Bethlehem</h3>
-                                <p>Bethlehem is a Palestinian town south of Jerusalem in the West Bank. The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination</p>
+                                <h3>Ramallah</h3>
+                                <p>Ramallah is a Palestinian city in the central West Bank located 10 km north of Jerusalem at an average elevation of 880 meters above sea level, adjacent to al-Bireh</p>
                                 <a href="/trips" class="btn-card">Discover Trips!</a>
                             </div>
                         </div>
@@ -205,17 +205,17 @@
                 I believe this website will be a profitable business as well as a way to providing support to our local market and internal tourism. </p>
         </div>
         <div  class="col-lg-5 px-4 pb-4">
-            <h4 class="mb-3">Contact:</h4>
-            <p>Mobile:00972-345-xxx-xxx</p>
-            <p>Email: tashe@ex.com</p>
-            <p>tashe/facebook.com</p>
+            <h4 class="mb-3">Contact</h4>
+            <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/6nWwZm0/phone-solid.png" alt="phone-solid" border="0" width="30px"></a> 00972-345-xxx-xxx</p>
+            <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/xYVv5Hk/envelope-solid.png" alt="envelope-solid" border="0" width="30px"></a> tashe@ex.com</p>
+            <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/zS5b1Xt/facebook.png" alt="facebook" border="0" width="30px"></a> tashe/facebook.com</p>
         </div>
         <div class="col-lg-2 px-4 pb-4">
-            <h4 class="mb-3">Follow Us:</h4>
+            <h4 class="mb-3">Follow Us</h4>
             <div class="social-media">
-                <a href="https://ibb.co/CJ2xtmG"><img src="https://i.ibb.co/tZXyhQr/1.png" alt="1" border="0" width="50px"></a>
-                <a href="https://ibb.co/qxB8kHt"><img src="https://i.ibb.co/Yb2Sp5z/2.png" alt="2" border="0" width="75px"></a>
-                <a href="https://imgbb.com/"><img src="https://i.ibb.co/YtJHyMG/haha.png" alt="haha" border="0" width="50px"></a>
+                <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/kq3BtsV/twitter-square-brands.png" alt="twitter-square-brands" border="0" width="30px"></a>  tashe/twitter.com</p>
+                <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/cFkzBRH/instagram.png" alt="instagram" border="0" width="30px"></a>  tashe/instagram.com</p>
+                <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/T2wcS0z/snapchat-square-brands.png" alt="snapchat-square-brands" border="0" width="30px"></a>   tashe/snapchat.com</p>
             </div>
         </div>
     </div>

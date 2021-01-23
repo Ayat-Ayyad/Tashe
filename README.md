@@ -30,8 +30,21 @@ We believe this website will be a profitable business as well as an effective wa
 
 
 
+**Tasheh Home page**
+ ![](home.png)
+ ![](homepage.gif)
 
-2-3 screenshots from home page ,img  Format: ![Alt Text](url)
+
+**Home Page- Photo Slider**
+ ![](slider.gif)
+ 
+ 
+ **Our webapp is fully responsive**
+ ![](responsive.gif)
+
+
+**User's joined trips**
+![](User's joined trips.gif)
 
 
 :biking_man: :swimmer: 	:biking_woman: 	:horse_racing: :climbing: :camping: :herb: :sunrise_over_mountains:
