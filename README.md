@@ -43,7 +43,7 @@ We believe this website will be a profitable business as well as an effective wa
  ![](responsive.gif)
 
 
-**User's joined trips**
+**User's joined trips **
 ![](User's joined trips.gif)
 
 
