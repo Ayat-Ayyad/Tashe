@@ -3,12 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-            crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
     <style>
         <%@include file="../resources/css/homePage.css" %>
     </style>
@@ -92,8 +87,8 @@
     </div>
     <div class="container">
 
-        <div class="row">
-            <div class="card col-lg" style="width: 18rem;">
+        <div class="row w-100">
+            <div class="card col-lg" >
                 <img class="card-img-top"
                      src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg"
                      alt="Card image cap">
@@ -102,14 +97,14 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-lg" style="width: 18rem;">
+            <div class="card col-lg" >
                 <img class="card-img-top" src="https://i.ibb.co/SQ1yFdK/deadsea.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-lg" style="width: 18rem;">
+            <div class="card col-lg" >
                 <img class="card-img-top" src="https://i.ibb.co/sCMZjxQ/Sebastya.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
