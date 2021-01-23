@@ -44,11 +44,11 @@ public class TripService {
     }
 
 
-    public TripLandmark getTripLandmarkByTripId(Long id) {
-        return tripLandmarkRepository.findByTripIdOrderByRouteAsc(id);
+    public List<TripLandmark> getTripLandmarkByTripId(Long id) {
+        return tripLandmarkRepository.findAllByTripIdOrderByRouteAsc(id);
     }
-    public TripLandmark getTripLandmarkByLandmark(Landmark landmark) {
-        return tripLandmarkRepository.findByLandmark(landmark);
+    public TripLandmark getTripLandmarkByTripAndLandmark(Trip trip, Landmark landmark) {
+        return tripLandmarkRepository.findByTripAndLandmark(trip, landmark);
     }
 
     public TripLandmark createTripLandmark(TripLandmark tripLandmark){

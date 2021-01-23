@@ -29,7 +29,7 @@ public class Trip {
     @JoinTable(
             name = "users_trips",
             joinColumns = @JoinColumn(name = "trip_id"),
-            inverseJoinColumns = @JoinColumn(name = "users_id"))
+            inverseJoinColumns = @JoinColumn(name = "user_id"))
     private List<User> users;
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(

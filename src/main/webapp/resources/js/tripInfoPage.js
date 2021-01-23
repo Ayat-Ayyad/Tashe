@@ -6,12 +6,12 @@ let map = L.map('map', {
 });
 
 
-function runDirection(start, end) {
+function runDirection(sCity,sName,sActivity,eCity,eName,eActivity) {
 
     // recreating new map layer after removal
     // map = L.map('map', {
     //     layers: MQ.mapLayer(),
-    //     center: [35.791188, -78.636755],
+    //     center: [31.905455218200064, 35.20356449458499],
     //     zoom: 12
     // });
 
@@ -19,8 +19,8 @@ function runDirection(start, end) {
 
     dir.route({
         locations: [
-            start,
-            end
+            sCity,
+            eCity
         ]
     });
 
@@ -37,7 +37,7 @@ function runDirection(start, end) {
                 popupAnchor: [0, -29]
             });
 
-            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map);
+            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h2>'+ sName +'</h2><p>'+sCity+'</p><p>'+sActivity+'</p><img width="100%" src="img/bethlehem.jpg"></div>');
 
             return marker;
         },
@@ -53,7 +53,7 @@ function runDirection(start, end) {
                 popupAnchor: [0, -29]
             });
 
-            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h1>Bethlehem</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><img width="100%" src="img/bethlehem.jpg"></div>');
+            marker = L.marker(location.latLng, { icon: custom_icon }).addTo(map).bindPopup('<div><h2>'+ eName +'</h2><p>'+eCity+'</p><p>'+eActivity+'</p><img width="100%" src="img/bethlehem.jpg"></div>');
 
             return marker;
         }
@@ -71,17 +71,29 @@ function submitForm(event) {
     event.preventDefault();
 
     // delete current map layer
-    map.remove();
+    // map.remove();
 
     // getting form data
-    start = document.getElementById("start").value;
-    end = document.getElementById("destination").value;
+    var data = document.getElementById("landmarks").value;
+    var landmarks = data.split(/[\[,\]]/);
+    for (var i = 0; i < landmarks.length; i++) {
+        if (landmarks[i] === "") {
+            landmarks.splice(i, 1);
+        }
+    }
+    console.log(landmarks);
 
-    // run directions function
-    runDirection(start, end);
+
+    for (var i = 0; i < landmarks.length /3 - 1; i+=3) {
+        // run directions function
+        runDirection(
+            landmarks[i],landmarks[i+1],landmarks[i+2],
+            landmarks[i+3],landmarks[i+4],landmarks[i+5]
+            );
+    }
 
     // reset form
-    document.getElementById("form").reset();
+    // document.getElementById("form").reset();
 }
 
 // asign the form to form variable

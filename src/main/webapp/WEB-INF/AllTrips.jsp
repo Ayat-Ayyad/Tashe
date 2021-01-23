@@ -61,45 +61,29 @@
 <section class="details-card">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="">
-                        <%--                        <span><h4>Trip's Name</h4></span>--%>
-                    </div>
-                    <div class="card-desc">
-                        <h3>Trip Name</h3>
-                        <p>Description about the trips, landmarks/ categories/ activities</p>
-                        <a href="#" class="btn-card">More Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="http://getwallpapers.com/wallpaper/full/7/b/2/838826-large-israel-wallpapers-1920x1200-high-resolution.jpg" alt="">
-                        <%--                        <span><h4>heading2</h4></span>--%>
-                    </div>
-                    <div class="card-desc">
-                        <h3>Trip's Name</h3>
-                        <p>Description about the trips, landmarks/ categories/ activities</p>
-                        <a href="#" class="btn-card">More Details</a>
+            <c:forEach var="trip" items="${ trips }">
+                <div class="col-md-4">
+                    <div class="card-content">
+                        <div class="card-img">
+                            <img src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <h3>${ trip.tripName }</h3>
+                            <p>${ trip.date }</p>
+                            <p>${ trip.price }</p>
+                            <a href="/trips/${ trip.id }" class="btn-card">More Details</a>
+                            <c:choose>
+                                <c:when test="${ trip.users.contains(user) }">
+                                    <span>Joined</span>
+                                </c:when>
+                                <c:otherwise>
+                                    <a href="/trips/${ trip.id }/join" class="btn-card">Join</a>
+                                </c:otherwise>
+                            </c:choose>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card-content">
-                    <div class="card-img">
-                        <img src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="">
-                        <%--                        <span><h4>Trip's Name</h4></span>--%>
-                    </div>
-                    <div class="card-desc">
-                        <h3>Trip's Name</h3>
-                        <p>Description about the trips, landmarks/ categories/ activities</p>
-                        <a href="#" class="btn-card">More Details</a>
-                    </div>
-                </div>
-            </div>
+            </c:forEach>
         </div>
     </div>
 </section>

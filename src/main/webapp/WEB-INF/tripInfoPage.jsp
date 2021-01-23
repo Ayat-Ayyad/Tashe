@@ -52,10 +52,23 @@
 <main role="main">
     <div id='map'></div>
     <div class="formBlock">
+        <h4>${ trip.tripName }</h4>
+        <p>${ trip.date }</p>
+        <p>${ trip.price }NIS</p>
+        <p>Number of people joined: ${ trip.users.size() }</p>
+        <div class="ml-5">
+            <c:forEach var="landmark" items="${ trip.landmarks }">
+           <h5>${ landmark.landmarkName }</h5>
+                <p>${ landmark.city }</p>
+                <p>${ landmark.description }</p>
+                <p>${ landmark.category }</p>
+                <p>${ landmark.activity }</p>
+
+            </c:forEach>
+        </div>
         <form id="form">
-            <input type="text" name="start" class="input" id="start" placeholder="Choose starting point"/>
-            <input type="text" name="end" class="input" id="destination" placeholder="Choose starting point"/>
-            <button style="display: none;" type="submit">Get Directions</button>
+            <input type="hidden" name="landmarks" class="input" id="landmarks" value="${ landmarks }"/>
+            <button style="" type="submit">Get Route</button>
         </form>
     </div>
 </main>

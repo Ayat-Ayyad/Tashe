@@ -41,7 +41,7 @@
     </nav>
 </header>
 <main class="container pt-5">
-    
+
     <div class="row mb-5">
         <div class="col-lg form-block mx-3 mb-5 mb-lg-0">
             <h5 class="mb-4">Add New Landmark:</h5>

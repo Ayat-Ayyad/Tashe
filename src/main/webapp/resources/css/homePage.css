@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Mistral';
+    src: url('../font/MISTRAL.TTF') format('ttf');
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #ddd;
+}
+
+h1 {
+    color: #4a4a4a;
+}
+
+.navbar-brand {
+    font-family: Mistral, sans-serif;
+    font-size: 50px;
+}
+
+.logout {
+    border: none;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 600px;
+}
+
+.join-now {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+    top: -200px;
+    left: 0;
+    width: 75vw;
+    z-index: 999;
+}
+
+.join-now h1 {
+    color: #a1a1a1;
+}
+
+.join-now button {
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.h-rule {
+    float: right;
+    background-color: #700;
+    width: 75vw;
+    height: 7px;
+    animation: rule 3s alternate-reverse infinite;
+    transform-origin: 100% 50%;
+}
+
+@keyframes rule {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
