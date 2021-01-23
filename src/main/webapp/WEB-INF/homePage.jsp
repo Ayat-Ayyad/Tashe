@@ -9,7 +9,9 @@
     <style>
         <%@include file="../resources/css/homePage.css" %>
     </style>
-
+    <style>
+        <%@include file="../resources/css/profile.css" %>
+    </style>
     <title>Welcome to Tasheh</title>
 </head>
 <body>
@@ -59,25 +61,17 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100"
+                     src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100"
-                     src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg"
-                     alt="Second slide">
+                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/7/b/2/838826-large-israel-wallpapers-1920x1200-high-resolution.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100"
-                     src="http://getwallpapers.com/wallpaper/full/4/6/2/838601-most-popular-israel-wallpapers-1920x1080-macbook.jpg"
-                     alt="Third slide">
+                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/NFVxtxR/HD-Free-Jerusalem-Photos.jpg"
-                     alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100"
-                     src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg "
-                     alt="Third slide">
+                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg " alt="Fourth slide">
+
             </div>
         </div>
         <a class="carousel-control-prev" href="#tashehCarousel" role="button" data-slide="prev">
@@ -93,53 +87,105 @@
         <div class="container">
             <h1 class="mb-4">Travel Palestine!</h1>
             <p>Wherever you go, go with all your heart.</p>
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Aenean sed adipiscing diam donec adipiscing tristique. Arcu cursus euismod quis
-                viverra nibh cras pulvinar mattis nunc. Lorem ipsum dolor sit amet consectetur. Augue interdum velit
-                euismod in pellentesque. Donec enim diam vulputate ut pharetra. Magna fringilla urna porttitor rhoncus.
-                Enim diam vulputate ut pharetra sit amet aliquam id diam. Commodo viverra maecenas accumsan lacus.
-                Convallis posuere morbi leo urna molestie at elementum eu facilisis. Sed arcu non odio euismod lacinia
-                at. In mollis nunc sed id semper risus in hendrerit. At varius vel pharetra vel turpis nunc eget.
-                Potenti nullam ac tortor vitae purus faucibus. Sagittis nisl rhoncus mattis rhoncus urna. Integer
-                malesuada nunc vel risus commodo viverra. Pharetra diam sit amet nisl suscipit adipiscing bibendum.
-            </p>
+            <p class="text-justify">we have what you are looking for, the perfect place for you. Scroll down to discover the trips we offer in our website. It's time to explore beautiful Palestine.</p>
             <button class="btn btn-outline-light px-4 py-2" href="/trips">Join Now!</button>
         </div>
     </div>
 </header>
 <main>
     <div class="mr-5 pr-5">
-        <h1 class="text-right">Discover Trips!</h1>
+        <h1 class="text-right">Discover Landmarks!</h1>
         <div class="h-rule mb-5"></div>
     </div>
     <div class="container">
 
-        <div class="row w-100">
-            <div class="card col-lg">
-                <img class="card-img-top"
-                     src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg"
-                     alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+        <section class="details-card">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="">
+                                <span><h4>Dead Sea</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Jericho</h3>
+                                <p>Jericho is a Palestinian city in the West Bank. It is located in the Jordan Valley, with the Jordan River to the east and Jerusalem to the wes</p>
+                                <a href="/trips" class="btn-card">Discover Trips!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card-content">
+                            <div class="card-img ">
+                                <img src="https://i.ibb.co/sCMZjxQ/Sebastya.jpg " alt="">
+                                <span><h4>Sabastya</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Nablus</h3>
+                                <p>Nablus is a city in the northern West Bank, approximately 49 kilometers north of Jerusalem, with a population of 126,132</p>
+                                <a href="/trips" class="btn-card">Discover Trips!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg" alt="">
+                                <span><h4>Fountain</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Ramallah</h3>
+                                <p>Ramallah is a Palestinian city in the central West Bank located 10 km north of Jerusalem at an average elevation of 880 meters above sea level, adjacent to al-Bireh</p>
+                                <a href="/trips" class="btn-card">Discover Trips</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="">
+                                <span><h4>Marsaba</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Bethlehem</h3>
+                                <p>Bethlehem is a Palestinian town south of Jerusalem in the West Bank. The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination</p>
+                                <a href="/trips" class="btn-card">Discover Trips!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="https://i.ibb.co/kDzmDgy/ibrahemi-mosque.jpg" alt="">
+                                <span><h4>Al-Ibrahemi</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Hebron</h3>
+                                <p>Hebron is a Palestinian city in the southern West Bank, 30 km south of Jerusalem. Nestled in the Judaean Mountains, it lies 930 meters above sea level</p>
+                                <a href="/trips" class="btn-card">Discover Trips!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card-content">
+                            <div class="card-img">
+                                <img src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg " alt="">
+                                <span><h4>AlAqsa</h4></span>
+                            </div>
+                            <div class="card-desc">
+                                <h3>Jerusalem</h3>
+                                <p>Jerusalem is a city in the Middle East. It is one of the oldest cities in the world, and is considered holy to the three major Abrahamic religions—Judaism, Christianity, and Islam.</p>
+                                <a href="/trips" class="btn-card">Discover Trips!</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card col-lg">
-                <img class="card-img-top" src="https://i.ibb.co/SQ1yFdK/deadsea.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card col-lg">
-                <img class="card-img-top" src="https://i.ibb.co/sCMZjxQ/Sebastya.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
 </main>
 <footer>
