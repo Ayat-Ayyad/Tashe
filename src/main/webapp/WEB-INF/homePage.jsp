@@ -4,7 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
     <style>
         <%@include file="../resources/css/homePage.css" %>
     </style>
@@ -31,15 +32,15 @@
                     <c:when test="${ currentUser.roles.get(0) != null }">
                         <c:choose>
                             <c:when test="${ currentUser.roles.get(0).name.equals('ROLE_USER') }">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/trips/joined">PROFILE</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/trips/joined">PROFILE</a>
+                                </li>
                             </c:when>
-                        <c:otherwise>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/admin/controls">Control Panel</a>
-                        </li>
-                        </c:otherwise>
+                            <c:otherwise>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/controls">Control Panel</a>
+                                </li>
+                            </c:otherwise>
                         </c:choose>
                         <li class="nav-item">
                             <form action="/logout" method="post">
@@ -60,16 +61,23 @@
                 <img class="d-block w-100"
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="Second slide">
+                <img class="d-block w-100"
+                     src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg"
+                     alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/4/6/2/838601-most-popular-israel-wallpapers-1920x1080-macbook.jpg" alt="Third slide">
+                <img class="d-block w-100"
+                     src="http://getwallpapers.com/wallpaper/full/4/6/2/838601-most-popular-israel-wallpapers-1920x1080-macbook.jpg"
+                     alt="Third slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/NFVxtxR/HD-Free-Jerusalem-Photos.jpg" alt="Second slide">
+                <img class="d-block w-100" src="https://i.ibb.co/NFVxtxR/HD-Free-Jerusalem-Photos.jpg"
+                     alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg " alt="Third slide">
+                <img class="d-block w-100"
+                     src="http://getwallpapers.com/wallpaper/full/9/6/4/838635-free-israel-wallpapers-3000x2000-photos.jpg "
+                     alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#tashehCarousel" role="button" data-slide="prev">
@@ -108,7 +116,7 @@
     <div class="container">
 
         <div class="row w-100">
-            <div class="card col-lg" >
+            <div class="card col-lg">
                 <img class="card-img-top"
                      src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg"
                      alt="Card image cap">
@@ -117,14 +125,14 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-lg" >
+            <div class="card col-lg">
                 <img class="card-img-top" src="https://i.ibb.co/SQ1yFdK/deadsea.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-lg" >
+            <div class="card col-lg">
                 <img class="card-img-top" src="https://i.ibb.co/sCMZjxQ/Sebastya.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -134,6 +142,34 @@
         </div>
     </div>
 </main>
+<footer>
+    <div class="row text-center text-lg-left">
+        <div class="col-lg-5 px-4 pb-4">
+            <h4 class="mb-3">TASHEH:</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. </p>
+        </div>
+        <div class="col-lg-5 px-4 pb-4">
+            <h4 class="mb-3">Contact:</h4>
+            <p>Mobile:00972-345-xxx-xxx</p>
+            <p>Email: tashe@ex.com</p>
+            <p>tashe/facebook.com</p>
+        </div>
+        <div class="col-lg-2 px-4 pb-4">
+            <h4 class="mb-3">Follow Us:</h4>
+            <div class="social-media">
+                <a href="#" class="mr-2"><img src="{% static 'img/icons/facebook.svg' %}" alt="FB Icon"/></a>
+                <a href="#"><img src="{% static 'img/icons/instagram.svg' %}" alt="Instagram Icon"/></a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="copyright text-center pb-3">Copyright&copy;2020 - All Rights Reserved</div>
+</footer>
 <!-- ./Footer -->
 <%--<section id="footer">--%>
 <%--    <div class="container">--%>

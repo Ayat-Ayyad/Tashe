@@ -96,9 +96,9 @@
         crossorigin="anonymous"
 ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
-<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=S8d7L47mdyAG5nHG09dUnSPJjreUVPeC"></script>
+<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=74uP9PYEEAdpGNKssHcfAONHzfyCaLUy"></script>
 <script
-        src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=S8d7L47mdyAG5nHG09dUnSPJjreUVPeC"></script>
+        src="h ttps://www.mapquestapi.com/sdk/leaflet/v2.2/mq-routing.js?key=74uP9PYEEAdpGNKssHcfAONHzfyCaLUy"></script>
 <script>
     <%@include file="../resources/js/tripInfoPage.js" %>
 </script>
