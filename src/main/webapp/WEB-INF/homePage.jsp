@@ -134,12 +134,12 @@
                     <div class="col-lg-4">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg" alt="">
-                                <span><h4>Fountain</h4></span>
+                                <img src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="">
+                                <span><h4>Marsaba</h4></span>
                             </div>
                             <div class="card-desc">
-                                <h3>Ramallah</h3>
-                                <p>Ramallah is a Palestinian city in the central West Bank located 10 km north of Jerusalem at an average elevation of 880 meters above sea level, adjacent to al-Bireh</p>
+                                <h3>Bethlehem</h3>
+                                <p>Bethlehem is a Palestinian town south of Jerusalem in the West Bank. The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination</p>
                                 <a href="/trips" class="btn-card">Discover Trips</a>
                             </div>
                         </div>
@@ -150,12 +150,12 @@
                     <div class="col-lg-4">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="http://getwallpapers.com/wallpaper/full/1/6/d/579805.jpg" alt="">
-                                <span><h4>Marsaba</h4></span>
+                                <img src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg" alt="">
+                                <span><h4>Fountain</h4></span>
                             </div>
                             <div class="card-desc">
-                                <h3>Bethlehem</h3>
-                                <p>Bethlehem is a Palestinian town south of Jerusalem in the West Bank. The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination</p>
+                                <h3>Ramallah</h3>
+                                <p>Ramallah is a Palestinian city in the central West Bank located 10 km north of Jerusalem at an average elevation of 880 meters above sea level, adjacent to al-Bireh</p>
                                 <a href="/trips" class="btn-card">Discover Trips!</a>
                             </div>
                         </div>
@@ -195,7 +195,7 @@
 <footer class="footer">
     <div class="row text-center text-lg-left">
         <div class="col-lg-5 px-4 pb-4">
-            <h4 class="mb-3">TASHEH</h4>
+            <h4 class="mb-3">TASHEH:</h4>
             <p class="foo">
                 Tasheh allows users to browse through many interesting day-trips around Palestine. Families and friends can join to have fun visit lots of different places and do many types of activities.
 
