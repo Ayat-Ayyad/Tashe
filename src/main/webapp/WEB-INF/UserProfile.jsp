@@ -62,7 +62,7 @@
     <div class="container">
         <div class="row">
             <c:forEach var="trip" items="${ trips }">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="card-content">
                         <div class="card-img">
                             <img src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="">
@@ -71,7 +71,7 @@
                             <h3>${ trip.tripName }</h3>
                             <p>${ trip.date }</p>
                             <p>${ trip.price }</p>
-                            <a href="/trips/${ trip.id }" class="btn-card">More Details</a>
+                            <a href="/trips/${ trip.id }" class="btn btn-warning">More Details</a>
                         </div>
                     </div>
                 </div>
