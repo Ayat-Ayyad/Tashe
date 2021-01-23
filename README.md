@@ -32,12 +32,12 @@ We believe this website will be a profitable business as well as an effective wa
 
 **Tasheh Home page**
  ![](home.png)
- ![](homepage.gif)
 
 
 **Home Page- Photo Slider**
  ![](slider.gif)
 
+![](homepage.gif)
 
 **User's joined trips**
 ![](usersjoinedtrips.gif)
