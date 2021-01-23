@@ -44,7 +44,7 @@ h1 {
 .foo{
     color:#9a9d90 !important;
     font-size: 12px;
-    text-align: center;
+
 }
 
 .join-now h1 {
@@ -70,6 +70,9 @@ h1 {
     color: #9a9d90;
     padding: 20px;
     font-size: 12px;
+}
+.footer social-media{
+    padding: 10px;
 }
 
 @keyframes rule {
