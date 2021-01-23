@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -31,15 +32,30 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/trips">DISCOVER TRIPS!</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/trips/joined">PROFILE</a>
-                </li>
-                <li class="nav-item">
-                    <form action="/logout" method="post">
-                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-                        <input type="submit" class="logout nav-link bg-transparent" value="LOGOUT"/>
-                    </form>
-                </li>
+                <c:choose>
+                    <c:when test="${ currentUser.roles.get(0) != null }">
+                        <c:choose>
+                            <c:when test="${ currentUser.roles.get(0).name.equals('ROLE_USER') }">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/trips/joined">PROFILE</a>
+                            </li>
+                            </c:when>
+                        <c:otherwise>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/controls">Control Panel</a>
+                        </li>
+                        </c:otherwise>
+                        </c:choose>
+                        <li class="nav-item">
+                            <form action="/logout" method="post">
+                                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                                <input type="submit" class="logout nav-link bg-transparent" value="LOGOUT"/>
+                            </form>
+                        </li>
+                    </c:when>
+                    <c:otherwise>
+                    </c:otherwise>
+                </c:choose>
             </ul>
         </div>
     </nav>
@@ -47,14 +63,14 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100"
-                     src="https://i.ibb.co/5nvC75x/deadsea.jpg"
+                     src="http://getwallpapers.com/wallpaper/full/7/b/2/838826-large-israel-wallpapers-1920x1200-high-resolution.jpg"
                      alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/rsVxtTy/Jordan-River.jpg" alt="Second slide">
+                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/6/7/5/838696-beautiful-israel-wallpapers-1920x1200-xiaomi.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://i.ibb.co/gzmNMTV/damascusgate.jpg" alt="Third slide">
+                <img class="d-block w-100" src="http://getwallpapers.com/wallpaper/full/4/6/2/838601-most-popular-israel-wallpapers-1920x1080-macbook.jpg" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#tashehCarousel" role="button" data-slide="prev">
@@ -93,7 +109,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="card col-lg" style="width: 18rem;">
+            <div class="card col-lg" >
                 <img class="card-img-top"
                      src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg"
                      alt="Card image cap">
@@ -102,14 +118,39 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-lg" style="width: 18rem;">
+            <div class="card col-lg" >
                 <img class="card-img-top" src="https://i.ibb.co/SQ1yFdK/deadsea.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-lg" style="width: 18rem;">
+            <div class="card col-lg" >
+                <img class="card-img-top" src="https://i.ibb.co/sCMZjxQ/Sebastya.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-lg" >
+                <img class="card-img-top"
+                     src="https://i.ibb.co/17pZ7MR/20181210-Orange-lighting-of-the-Ramallah-Town-Hall-2.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card col-lg" >
+                <img class="card-img-top" src="https://i.ibb.co/SQ1yFdK/deadsea.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card col-lg" >
                 <img class="card-img-top" src="https://i.ibb.co/sCMZjxQ/Sebastya.jpg" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the

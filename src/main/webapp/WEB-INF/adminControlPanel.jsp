@@ -83,7 +83,11 @@
                     </form:select>
                     <form:errors path="activity"/>
                 </div>
-
+                <div class="form-group">
+                    <form:label path="imgUrl">Image Url</form:label>
+                    <form:input class="form-control" path="imgUrl"/>
+                    <form:errors class="text-danger" path="imgUrl"/>
+                </div>
                 <button type="submit" class="btn btn-outline-info px-4 py-2">Add Landmark</button>
             </form:form>
         </div>
