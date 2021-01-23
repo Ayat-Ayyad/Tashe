@@ -31,7 +31,7 @@ We believe this website will be a profitable business as well as an effective wa
 
 
 
-2-3 screenshots from home page ,img  Format: ![Alt Text](url)
+ ![](home.png)
 
 
 :biking_man: :swimmer: 	:biking_woman: 	:horse_racing: :climbing: :camping: :herb: :sunrise_over_mountains:
