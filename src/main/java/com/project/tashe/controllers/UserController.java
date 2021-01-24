@@ -59,6 +59,10 @@ public class  UserController {
 
     @RequestMapping(value = {"/", "/home"})
     public String home(Principal principal, Model model) {
+        if(principal == null){
+            model.addAttribute("currentUser", null);
+            return "homePage.jsp";
+        }
         String username = principal.getName();
         model.addAttribute("currentUser", userService.findByUsername(username));
         return "homePage.jsp";

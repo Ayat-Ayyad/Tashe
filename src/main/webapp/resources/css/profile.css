@@ -30,8 +30,8 @@ section{
 
 .card-img span {
     position: absolute;
-    top: 15%;
-    left: 12%;
+    top: 10px;
+    left: 10px;
     background: #ffc107;
     padding: 6px;
     color: #fff;
@@ -41,7 +41,6 @@ section{
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    transform: translate(-50%,-50%);
 }
 .card-img span h4{
     font-size: 12px;

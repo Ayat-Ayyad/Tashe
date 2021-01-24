@@ -25,14 +25,23 @@ public class TripController {
 
     @RequestMapping("/trips")
     public String tripsPage(Principal principal, Model model) {
+        if (principal == null) {
+            model.addAttribute("trips", tripService.getAllTrips());
+            model.addAttribute("currentUser", null);
+            return "AllTrips.jsp";
+        }
         String username = principal.getName();
         model.addAttribute("trips", tripService.getAllTrips());
-        model.addAttribute("user", userService.findByUsername(username));
+        model.addAttribute("currentUser", userService.findByUsername(username));
         return "AllTrips.jsp";
     }
 
     @RequestMapping("/trips/{id}")
-    public String tripInfoPage(@PathVariable("id") Long id, Model model) {
+    public String tripInfoPage(Principal principal, @PathVariable("id") Long id, Model model) {
+        if (principal == null) {
+            model.addAttribute("currentUser", null);
+            return "AllTrips.jsp";
+        }
         List<TripLandmark> tripLandmarks = tripService.getTripLandmarkByTripId(id);
         ArrayList<String> landmarks = new ArrayList<>();
         for (TripLandmark tripLandmark : tripLandmarks) {
@@ -40,9 +49,10 @@ public class TripController {
                     tripLandmark.getLandmark().getCity() + "," + tripLandmark.getLandmark().getLandmarkName() + "," + tripLandmark.getLandmark().getActivity()
             );
         }
+        String username = principal.getName();
+        model.addAttribute("currentUser", userService.findByUsername(username));
         model.addAttribute("trip", tripService.getTripById(id));
         model.addAttribute("landmarks", landmarks);
-
         return "tripInfoPage.jsp";
     }
 
@@ -63,24 +73,31 @@ public class TripController {
 
     @RequestMapping("/trips/joined")
     public String userTripsPage(Principal principal, Model model) {
+        if (principal == null) {
+            model.addAttribute("currentUser", null);
+            return "AllTrips.jsp";
+        }
         String username = principal.getName();
         User user = userService.findByUsername(username);
         model.addAttribute("trips", user.getTrips());
+        model.addAttribute("currentUser", user);
         return "UserProfile.jsp";
     }
 
-    //    =========================================================================
-
     @RequestMapping("/admin/controls")
-    public String newTripLandmarkForm(@ModelAttribute("trip") Trip trip, @ModelAttribute("landmark") Landmark landmark, Model model) {
+    public String newTripLandmarkForm(Principal principal, @ModelAttribute("trip") Trip trip, @ModelAttribute("landmark") Landmark landmark, Model model) {
+        if (principal == null) {
+            model.addAttribute("currentUser", null);
+            return "AllTrips.jsp";
+        }
+        String username = principal.getName();
+        model.addAttribute("currentUser", userService.findByUsername(username));
         model.addAttribute("cities", City.CITIES);
         model.addAttribute("categories", Category.CATEGORIES);
         model.addAttribute("activities", Activity.ACTIVITIES);
         model.addAttribute("landmarks", tripService.getAllLandmarks());
         return "adminControlPanel.jsp";
     }
-
-    //    =========================================================================
 
     @RequestMapping(value = "/admin/addlandmark", method = RequestMethod.POST)
     public String createLandmark(@Valid @ModelAttribute("landmark") Landmark landmark, Model model, BindingResult result) {
@@ -94,8 +111,6 @@ public class TripController {
         tripService.createLandmark(landmark);
         return "redirect:/admin/controls";
     }
-
-    //    =========================================================================
 
     @RequestMapping(value = "/admin/addtrip", method = RequestMethod.POST)
     public String createTrip(@Valid @ModelAttribute("trip") Trip trip, Model model, BindingResult result) {
