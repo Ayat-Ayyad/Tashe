@@ -15,6 +15,7 @@ We believe this website will be a profitable business as well as an effective wa
 1. Users can **browse** many different types of day-trips.
 2. They can also **join** the trips they like.
 3. Users can view lots of info about the trip; such as **activities**, **price**, **date**, and a brief **description** about the landmarks to be visited. 
+4. The **route** of each trip is shown on a map in the trip details page.
 
 
 
